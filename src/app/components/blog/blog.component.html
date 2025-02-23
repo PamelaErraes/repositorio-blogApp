@@ -1,26 +1,26 @@
 <section class="container mt-3" >
     <h3>Blog de Noticias </h3>
 <hr>
-    <form >
+    <form #blogForm="ngForm" (ngSubmit)="getDataForm(blogForm)">
     
         <div class="mb-3">
             <label class="form-label " for="Titulo">Titulo</label>
-            <input class="form-control " type="text" id="titulo" name="titulo"   placeholder="Título">
+            <input class="form-control " type="text" id="titulo" name="titulo"  ngModel placeholder="Título">
         </div>
 
         <div class="mb-3">
             <label class="form-label " for="Imagen">Imagen</label>
-            <input class="form-control" type="url" id="imagen" name="imagen"  placeholder="URL de la imagen">
+            <input class="form-control" type="url" id="imagen" name="imagen" ngModel placeholder="URL de la imagen">
         </div>
         
         <div class="mb-3">
             <label class="form-label " for="Texto">Texto</label>
-            <textarea  class="form-control"  rows="5" id="texto" name="texto"   placeholder="Texto de la noticia"></textarea>
+            <textarea  class="form-control"  rows="5" id="texto" name="texto"  ngModel placeholder="Texto de la noticia"></textarea>
         </div>
     
         <div class="mb-3">
             <label class="form-label " for="Fecha">Fecha</label>
-            <input class="form-control  w-25 " type="date" id="fecha" name="fecha"   >
+            <input class="form-control  w-25 " type="date" id="fecha" name="fecha" ngModel  >
         </div>
     
         <input type="submit" value="Publicar" class="btn btn-primary">
