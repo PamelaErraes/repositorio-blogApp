@@ -1,6 +1,6 @@
 .noticia {
     margin-bottom: 20px; /* Ajusta la separación entre noticias */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     /* border: 1px solid #ddd; */
 }
@@ -33,6 +33,6 @@
 hr {
     border: none;
     height: 1px;
-    background-color: #353232;
+    background-color: #3d3b3b;
     margin: 20px 0;
 }
