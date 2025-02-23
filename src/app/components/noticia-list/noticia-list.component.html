@@ -1,0 +1,22 @@
+<section class="container mt-3" >
+    <h2 class="text-center my-4">Noticias</h2>
+    <div class="container my-4">
+        <div class="row noticia p-3 shadow-sms mb-4">
+            @for (noticia of arrayNoticias; track $index) {
+    
+                <div class="col-md-4">
+                    <img [src]="noticia.imagen" class="img-fluid rounded noticia-img" alt="Imagen de la noticia">
+                </div>
+    
+                <div class="col-md-8 d-flex flex-column" >
+                    <h5 class="noticia-titulo">{{ noticia.titulo }}</h5>
+                    <p class="noticia-texto">{{ noticia.texto }}</p>
+                    <p class="fecha">Fecha: {{ noticia.fecha }}</p>
+                </div>
+                <hr>
+            }
+        </div>
+    </div>
+    </section>
+    
+    
